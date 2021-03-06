@@ -6,12 +6,22 @@
 
 function xify(str) {
   let outputString = '';
-  for (let i = 0; i < str.length; i ++) {
+  for (let i = 0; i < str.length; i++) {
     outputString = outputString + 'x';
   }
   return outputString;
 }
 
+
+// yellingChars - returns the given string with an exclamation point after each character
+
+function yellingChars(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    outputString = outputString + `${str[i]}!`
+  }
+  return outputString;
+}
 
 
 

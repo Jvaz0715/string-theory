@@ -51,10 +51,10 @@ console.log(numberedChars('Hello'));
 // exclaim - returns the given sentence with every question mark or period  to an exclamation point
 // exclaim('Hello.') --> 'Hello!'
 
-function exclaim(str) {
+/*function exclaim(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === '.' || str[i] === '?') {
+    if (str[i] === '.' || str[i] == '?') {
       outputString += '!';
     }
     outputString = outputString + str[i];
@@ -62,7 +62,7 @@ function exclaim(str) {
   return outputString;
 }
 
-console.log(exclaim('Hello. My name is James. You?'))
+console.log(exclaim('Hello. My name is James. You?'))*/
 
 //repeatIt - returns the given string repeated n times, where n is the second parameter
 //Successfully completed
@@ -93,17 +93,19 @@ console.log(truncate("Well, that's just, like, your opinion man."))
 
 //ciEmailify - creates an email from a two-part name
 
-/*function ciEmailify(str) {
+function ciEmailify(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
-    if (i !== ' ') {
+    if (str[i] === ' ') {
+      outputString = outputString + '.';
+    } else {
       outputString = outputString + str[i];
     }
   }
-  return outputString + '@codeimmersives.com';
+  return outputString.toLowerCase() + '@codeimmersives.com';
 }
 
-console.log(ciEmailify('James Vazquez'))*/
+console.log(ciEmailify('James Vazquez'))
 
 
 
@@ -121,7 +123,7 @@ function reverse(str) {
 
 
 // onlyVowels - returns only the vowels from a word
-// succcessfully completed
+// successfully completed
 
 function onlyVowels(str) {
   let outputString = '';

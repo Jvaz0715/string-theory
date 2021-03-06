@@ -33,7 +33,17 @@ function indexedChars(str) {
   return outputString;
 }
 
+// numberedChars -adds the number of each character before that character  in the given string
+// numberedChars('Hello') -->  '(1)h(2)e(3)l(4)l(5)o'
 
+function numberedChars(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    let charNum = i + 1;
+    outputString =  outputString + `(${charNum})` + str[i];
+  }
+  return outputString;
+}
 
 
 

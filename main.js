@@ -54,12 +54,14 @@ console.log(numberedChars('Hello'));
 function exclaim(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
-    if (str[i] !== '.' && str[i] !== '?') {
-      outputString = outputString + str[i];
+    if (str[i] === '.' || str[i] === '?') {
+      outputString += '!';
     }
+    outputString = outputString + str[i];
   }
   return outputString;
 }
+
 console.log(exclaim('Hello. My name is James. You?'))
 
 //repeatIt - returns the given string repeated n times, where n is the second parameter
@@ -89,6 +91,22 @@ function truncate(str) {
 
 console.log(truncate("Well, that's just, like, your opinion man."))
 
+//ciEmailify - creates an email from a two-part name
+
+/*function ciEmailify(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i !== ' ') {
+      outputString = outputString + str[i];
+    }
+  }
+  return outputString + '@codeimmersives.com';
+}
+
+console.log(ciEmailify('James Vazquez'))*/
+
+
+
 //reverse = reverses the given string
 // Successfully completed
 
@@ -117,12 +135,23 @@ function onlyVowels(str) {
 }
 
 // crazyCase - returns the given string with alternating lower and upper cases
+// hello --> hElLo
+
+// titleCase - returns a transformed version of the given string where every word starts with a capital letter and every non-word-starting letter is lower cased
+// return of the king --> Return Of The King'
 
 
 
+//camelCase - returns the given string in camelCase
+//oh Hello --> ohHello
 
 
- /********************************************
+//crazyCase2ReturnOfCrazyCase - same as crazyCase but does not count spaces as letters to upper or lower case
+//multiple words here --> mUlTiPlE wOrDs HeRe
+
+
+
+/********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
  ********************************************/

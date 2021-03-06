@@ -173,6 +173,22 @@ function titleCase(str) {
 //camelCase - returns the given string in camelCase
 //oh Hello --> ohHello
 
+function camelCase(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i === 0) {
+      outputString += str[i].toLowerCase();
+    } else if (str[i - 1] === ' ') {
+      outputString += str[i].toUpperCase();
+    } else if (str[i] !== ' ') {
+      outputString += str[i];
+    }
+  }
+  return outputString;
+}
+
+console.log(camelCase('oh you Hello'))
+
 
 //crazyCase2ReturnOfCrazyCase - same as crazyCase but does not count spaces as letters to upper or lower case
 //multiple words here --> mUlTiPlE wOrDs HeRe

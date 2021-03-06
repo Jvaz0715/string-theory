@@ -49,7 +49,7 @@ function numberedChars(str) {
 console.log(numberedChars('Hello'));
 
 // exclaim - returns the given sentence with every question mark or period  to an exclamation point
-// exclaim('Hello.') --> 'Hello!'
+// Successfully completed
 
 function exclaim(str) {
   let outputString = '';
@@ -138,8 +138,25 @@ function onlyVowels(str) {
 // crazyCase - returns the given string with alternating lower and upper cases
 // hello --> hElLo
 
+function crazyCase(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0) {
+      outputString += str[i].toLowerCase();
+    } else {
+      outputString += str[i].toUpperCase();
+    }
+  }
+  return outputString;
+}
+
+//console.log(crazyCase('James'));
+
+
 // titleCase - returns a transformed version of the given string where every word starts with a capital letter and every non-word-starting letter is lower cased
 // return of the king --> Return Of The King'
+
+
 
 
 

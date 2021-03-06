@@ -44,7 +44,46 @@ function numberedChars(str) {
   }
   return outputString;
 }
+console.log(numberedChars('Hello'))
 
+// exclaim - returns the given sentence with every question mark or period  to an exclamation point
+// exclaim('Hello.') --> 'Hello!'
+
+/*function exclaim(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "." || str[i] === "!") {
+
+    }
+  }
+  return outputString;
+}
+
+console.log('Hello.')*/
+
+//repeatIt - returns the given string repeated n times, where n is the second paramater
+//repeatIt('beetlejuice', 3) -> beetlejuicebeetlejuicebettlejuice
+
+/*function repeatIt(str, n) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    outputString = outputString + str;
+  }
+
+}*/
+
+//reverse = reverses the given string
+// reverse('James') --> 'semaJ'
+
+function reverse(str) {
+  let outputString = '';
+  for (let i = str.length-1; i >= 0; i--) {
+    let charNum = i + 1;
+    outputString = outputString + str[i];
+  }
+  return outputString;
+}
+//console.log(reverse('Hello'))
 
 
 

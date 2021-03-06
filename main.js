@@ -2,6 +2,16 @@
  * YOUR CODE HERE *
  ******************/
 
+//xify - returns the same string but with every character replaced by an 'x'
+
+function xify(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i ++) {
+    outputString = outputString + 'x';
+  }
+  return outputString;
+}
+
 
 
 

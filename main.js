@@ -3,7 +3,7 @@
  ******************/
 
 //xify - returns the same string but with every character replaced by an 'x'
-// successfully completed!
+// Successfully completed!
 
 function xify(str) {
   let outputString = '';
@@ -14,6 +14,7 @@ function xify(str) {
 }
 
 // yellingChars - returns the given string with an exclamation point after each character
+// Successfully completed
 
 function yellingChars(str) {
   let outputString = '';
@@ -24,6 +25,7 @@ function yellingChars(str) {
 }
 
 // indexedChars -adds the index of each character before that character in the given string
+// Successfully completed
 
 function indexedChars(str) {
   let outputString = '';
@@ -34,7 +36,7 @@ function indexedChars(str) {
 }
 
 // numberedChars -adds the number of each character before that character  in the given string
-// numberedChars('Hello') -->  '(1)h(2)e(3)l(4)l(5)o'
+//Successfully completed
 
 function numberedChars(str) {
   let outputString = '';
@@ -60,10 +62,8 @@ console.log(numberedChars('Hello'));
 
 console.log(exclaim('Hello. My name is James. You?'))*/
 
-
-
 //repeatIt - returns the given string repeated n times, where n is the second paramater
-//repeatIt('beetlejuice', 3) -> beetlejuicebeetlejuicebettlejuice
+//Successfully completed
 
 function repeatIt(str, n) {
   let outputString = '';
@@ -73,11 +73,24 @@ function repeatIt(str, n) {
   return outputString;
 }
 
-console.log(repeatIt('WorD', 10))
+//truncate - shortens a long string to 15 characters plus ...
+// truncate("Well, that's just, like, your opinion man.") -> "Well, that's ju..."
 
+function truncate(str) {
+  let truncatedString = '';
+  if (str.length < 18) {
+    return str;
+  }
+  for (let i = 0; i < 15; i++) {
+    truncatedString = truncatedString + str[i];
+  }
+  return truncatedString + '...';
+}
+
+console.log(truncate("Well, that's just, like, your opinion man."))
 
 //reverse = reverses the given string
-// reverse('James') --> 'semaJ'
+// Successfully completed
 
 function reverse(str) {
   let outputString = '';
@@ -87,10 +100,10 @@ function reverse(str) {
   }
   return outputString;
 }
-console.log(reverse('Hello'))
+
 
 // onlyVowels - returns only the vowels from a word
-// onlyVowels('James') --> 'ae'
+// succcessfully completed
 
 function onlyVowels(str) {
   let outputString = '';

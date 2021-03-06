@@ -23,6 +23,15 @@ function yellingChars(str) {
   return outputString;
 }
 
+// indexedChars -adds the index of each character before that character in the given string
+
+function indexedChars(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    outputString =  outputString + i + str[i];
+  }
+  return outputString;
+}
 
 
 

@@ -3,6 +3,7 @@
  ******************/
 
 //xify - returns the same string but with every character replaced by an 'x'
+// successfully completed!
 
 function xify(str) {
   let outputString = '';
@@ -101,6 +102,12 @@ function onlyVowels(str) {
   }
   return outputString;
 }
+
+// crazyCase - returns the given string with alternating lower and upper cases
+
+
+
+
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *

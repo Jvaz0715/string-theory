@@ -51,18 +51,20 @@ console.log(numberedChars('Hello'));
 // exclaim - returns the given sentence with every question mark or period  to an exclamation point
 // exclaim('Hello.') --> 'Hello!'
 
-/*function exclaim(str) {
+function exclaim(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === '.' || str[i] == '?') {
+    if (str[i] === '.' || str[i] === '?') {
       outputString += '!';
+    } else {
+      outputString += str[i];
     }
-    outputString = outputString + str[i];
   }
   return outputString;
 }
 
-console.log(exclaim('Hello. My name is James. You?'))*/
+console.log(exclaim('Hello. My name is James. You?'))
+
 
 //repeatIt - returns the given string repeated n times, where n is the second parameter
 //Successfully completed
@@ -92,22 +94,19 @@ function truncate(str) {
 console.log(truncate("Well, that's just, like, your opinion man."))
 
 //ciEmailify - creates an email from a two-part name
+//Successfully completed
 
 function ciEmailify(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
     if (str[i] === ' ') {
-      outputString = outputString + '.';
+      outputString += '.';
     } else {
-      outputString = outputString + str[i];
+      outputString += str[i];
     }
   }
   return outputString.toLowerCase() + '@codeimmersives.com';
 }
-
-console.log(ciEmailify('James Vazquez'))
-
-
 
 //reverse = reverses the given string
 // Successfully completed

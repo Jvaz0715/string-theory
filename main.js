@@ -171,7 +171,7 @@ function titleCase(str) {
 }
 
 //camelCase - returns the given string in camelCase
-//oh Hello --> ohHello
+// Successfully completed
 
 function camelCase(str) {
   let outputString = '';
@@ -187,28 +187,23 @@ function camelCase(str) {
   return outputString;
 }
 
-console.log(camelCase('oh you Hello'))
-
-
 //crazyCase2ReturnOfCrazyCase - same as crazyCase but does not count spaces as letters to upper or lower case
 //multiple words here --> mUlTiPlE wOrDs HeRe
 
-/*function crazyCase2ReturnOfCrazyCase(str) {
+function crazyCase2ReturnOfCrazyCase(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
-    if (i % 2 === 0 && str[i] !== ' ') {
+  if (i % 2 === 0) {
       outputString += str[i].toLowerCase();
-    } else if (str[i] === ' ') {
-        outputString += ' ';
     } else {
       outputString += str[i].toUpperCase();
     }
   }
-  return outputString;
+return outputString;
 }
 
-console.log(crazyCase2ReturnOfCrazyCase('multiple words here'))*/
-
+console.log(crazyCase2ReturnOfCrazyCase('multiple words here'))
+console.log(crazyCase2ReturnOfCrazyCase('crazy stuff'))
 
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *

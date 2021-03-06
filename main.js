@@ -136,7 +136,7 @@ function onlyVowels(str) {
 }
 
 // crazyCase - returns the given string with alternating lower and upper cases
-// hello --> hElLo
+// Successfully Completed
 
 function crazyCase(str) {
   let outputString = '';
@@ -154,11 +154,21 @@ function crazyCase(str) {
 
 
 // titleCase - returns a transformed version of the given string where every word starts with a capital letter and every non-word-starting letter is lower cased
-// return of the king --> Return Of The King'
+// Successfully Completed
 
-
-
-
+function titleCase(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+   if (i === 0) {
+      outputString += str[i].toUpperCase();
+    } else if (str[i - 1] === ' ') {
+      outputString += str[i].toUpperCase();
+    } else {
+      outputString += str[i].toLowerCase();
+    }
+  }
+  return outputString;
+}
 
 //camelCase - returns the given string in camelCase
 //oh Hello --> ohHello
@@ -167,6 +177,21 @@ function crazyCase(str) {
 //crazyCase2ReturnOfCrazyCase - same as crazyCase but does not count spaces as letters to upper or lower case
 //multiple words here --> mUlTiPlE wOrDs HeRe
 
+/*function crazyCase2ReturnOfCrazyCase(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0 && str[i] !== ' ') {
+      outputString += str[i].toLowerCase();
+    } else if (str[i] === ' ') {
+        outputString += ' ';
+    } else {
+      outputString += str[i].toUpperCase();
+    }
+  }
+  return outputString;
+}
+
+console.log(crazyCase2ReturnOfCrazyCase('multiple words here'))*/
 
 
 /********************************************

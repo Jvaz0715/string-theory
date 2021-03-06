@@ -12,7 +12,6 @@ function xify(str) {
   return outputString;
 }
 
-
 // yellingChars - returns the given string with an exclamation point after each character
 
 function yellingChars(str) {
@@ -44,7 +43,7 @@ function numberedChars(str) {
   }
   return outputString;
 }
-console.log(numberedChars('Hello'))
+console.log(numberedChars('Hello'));
 
 // exclaim - returns the given sentence with every question mark or period  to an exclamation point
 // exclaim('Hello.') --> 'Hello!'
@@ -52,14 +51,15 @@ console.log(numberedChars('Hello'))
 /*function exclaim(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === "." || str[i] === "!") {
-
+    if (str[i] !== '.' && str[i] !== '?') {
+      outputString = outputString + str[i];
     }
-  }
   return outputString;
 }
 
-console.log('Hello.')*/
+console.log(exclaim('Hello. My name is James. You?'))*/
+
+
 
 //repeatIt - returns the given string repeated n times, where n is the second paramater
 //repeatIt('beetlejuice', 3) -> beetlejuicebeetlejuicebettlejuice
@@ -86,21 +86,21 @@ function reverse(str) {
   }
   return outputString;
 }
-//console.log(reverse('Hello'))
+console.log(reverse('Hello'))
 
 // onlyVowels - returns only the vowels from a word
 // onlyVowels('James') --> 'ae'
 
-/*function onlyVowels(str) {
+function onlyVowels(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
-   
+    if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u' ||
+    str[i] === 'A' || str[i] === 'E' || str[i] === 'I' || str[i] === 'O' || str[i] === 'U') {
+      outputString = outputString + str[i]  
+    }
   }
   return outputString;
 }
-
-console.log(onlyVowels('James'))*/
-
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *

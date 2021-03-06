@@ -64,13 +64,16 @@ console.log('Hello.')*/
 //repeatIt - returns the given string repeated n times, where n is the second paramater
 //repeatIt('beetlejuice', 3) -> beetlejuicebeetlejuicebettlejuice
 
-/*function repeatIt(str, n) {
+function repeatIt(str, n) {
   let outputString = '';
-  for (let i = 0; i < str.length; i++) {
-    outputString = outputString + str;
+  for (n; n > 0; n--) {
+    outputString += str;
   }
+  return outputString;
+}
 
-}*/
+console.log(repeatIt('WorD', 10))
+
 
 //reverse = reverses the given string
 // reverse('James') --> 'semaJ'
@@ -85,6 +88,18 @@ function reverse(str) {
 }
 //console.log(reverse('Hello'))
 
+// onlyVowels - returns only the vowels from a word
+// onlyVowels('James') --> 'ae'
+
+/*function onlyVowels(str) {
+  let outputString = '';
+  for (let i = 0; i < str.length; i++) {
+   
+  }
+  return outputString;
+}
+
+console.log(onlyVowels('James'))*/
 
 
  /********************************************

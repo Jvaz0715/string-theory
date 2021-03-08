@@ -46,7 +46,7 @@ function numberedChars(str) {
   }
   return outputString;
 }
-console.log(numberedChars('Hello'));
+//console.log(numberedChars('Hello'));
 
 // exclaim - returns the given sentence with every question mark or period  to an exclamation point
 // Successfully completed
@@ -63,7 +63,7 @@ function exclaim(str) {
   return outputString;
 }
 
-console.log(exclaim('Hello. My name is James. You?'))
+//console.log(exclaim('Hello. My name is James. You?'))
 
 
 //repeatIt - returns the given string repeated n times, where n is the second parameter
@@ -91,7 +91,7 @@ function truncate(str) {
   return truncatedString + '...';
 }
 
-console.log(truncate("Well, that's just, like, your opinion man."))
+//console.log(truncate("Well, that's just, like, your opinion man."))
 
 //ciEmailify - creates an email from a two-part name
 //Successfully completed
@@ -159,7 +159,7 @@ function crazyCase(str) {
 function titleCase(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
-   if (i === 0) {
+  if (i === 0) {
       outputString += str[i].toUpperCase();
     } else if (str[i - 1] === ' ') {
       outputString += str[i].toUpperCase();
@@ -190,6 +190,24 @@ function camelCase(str) {
 //crazyCase2ReturnOfCrazyCase - same as crazyCase but does not count spaces as letters to upper or lower case
 //multiple words here --> mUlTiPlE wOrDs HeRe
 
+//Below attempts but fails to solve function (fails 2/3 tests)
+/*function crazyCase2ReturnOfCrazyCase(str) {
+  let outputString = '';
+  let capitalizeOnly = true;
+  for (let i = 0; i < str.length; i++) {
+    if (i !== ' ') {
+      if (capitalizeOnly && i % 2 !== 0) {
+        outputString += str[i].toUpperCase()
+      } else {
+        outputString += str[i]
+      }
+    }
+    else outputString += ''
+  }
+  return outputString;
+}*/
+
+//Below  attempts but fails to solve function (fails 1/3 tests)
 function crazyCase2ReturnOfCrazyCase(str) {
   let outputString = '';
   for (let i = 0; i < str.length; i++) {
